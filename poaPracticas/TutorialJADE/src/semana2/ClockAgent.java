@@ -5,7 +5,7 @@ import jade.core.Agent;
 import jade.core.behaviours.TickerBehaviour;
 
 public class ClockAgent extends Agent {
-
+/** Prueba para git  **/
 	public void setup() {
 		Object[] args = getArguments();
 		

@@ -10,16 +10,16 @@ public class BookBuyerAgent extends Agent {
 	private AID[] sellerAgents = { new AID("seller1", AID.ISLOCALNAME), new AID("seller2", AID.ISLOCALNAME) };
 
 	public void setup() {
-		
-		System.out.println("Hello! Buyer-agent "+getAID().getName()+" is ready.");
-		
+
+		System.out.println("Hello! Buyer-agent " + getAID().getName() + " is ready.");
+
 		Object[] args = getArguments();
-		
-		if(args!=null && args.length>0) {
-			
-			int i=0;
-			while(i<args.length) {
-				targetBookTittle=(String)args[i];
+
+		if (args != null && args.length > 0) {
+
+			int i = 0;
+			while (i < args.length) {
+				targetBookTittle = (String) args[i];
 				System.out.println("Trying to buy " + targetBookTittle);
 				i++;
 			}
